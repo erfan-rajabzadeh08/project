@@ -1,0 +1,2258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prc.js</title>
+    <link rel="stylesheet" href="./css/prc1.css">
+    <script defer src="js/prc1.js" ></script>
+    <link rel="stylesheet" href="./css/icon/css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script defer src="css/bootstrap-5.3.1-dist/js/bootstrap.bundle.js" ></script>
+</head>
+
+ <body>
+<div class="container-fluid  bg-black">
+<div class="container">
+    <div class="row justify-content-between">
+    <div class="col-12 col-xl-6 p-2">
+     <span class="text-white pe-2  border-hd">WELCOME TO SHARMA ONLINE SHOPPING STORE !</span>
+      <span class="  ps-2 span2-hd">FOLLOW US: </span>
+      <span >
+      <a href="#"><i class="fa-brands fa-facebook icon1" ></i></a>
+      <a href="#"><i class="fa-brands fa-twitter icon1" ></i>
+      <a href="#"><i class="fa-brands fa-google-plus-g icon1"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube icon1 "></i></a>
+    </span>
+
+
+    </div>
+     <div class="col-12 col-xl-6 d-sm-flex   justify-content-xl-end">
+        <div class="dropdown drophd">
+        <button type="button"  data-bs-toggle="dropdown" class=" btn btn-drop" >
+        <div class=" drop">
+        <span class="icon-user"><i class="fa-solid fa-user pe-1" ></i> MY ACCOUNT <i class="fa-solid fa-caret-down "></i> </span>
+     </div>
+         </button>
+         <ul class="dropdown-menu border-0 shadow">
+            <li><a class="dropdown-item" href="#">Register</a></li>
+            <hr class="link-opacity-10">
+            <li><a class="dropdown-item" href="#">Login</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown drophd">
+              <button type="button"  data-bs-toggle="dropdown" class=" btn btn-drop" >
+
+                <span class="icon-user">  <img src="./css/img/1.webp" alt="">
+                 EN-GB    <i class="fa-solid fa-caret-down "></i> </span>
+
+                  <div class=" drop">
+
+                </div>
+            </button>
+            <ul class="dropdown-menu dropicon border-0 shadow">
+                <li ><a class="dropdown-item " href="#"><div class="dropicon"><img src="./css/img/1.webp" alt="">  English</div></a></li>
+                <hr class="link-opacity-10">
+                <li><a class="dropdown-item" href="#"><div class="dropicon"><img src="./css/img/2.webp" alt="">  Germeny</div></a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown drophd">
+          <button type="button"  data-bs-toggle="dropdown" class=" btn btn-drop" >
+          <div class=" drop">
+          <span class="icon-user">$ GBP <i class="fa-solid fa-caret-down "></i>  </span>
+       </div>
+           </button>
+           <ul class="dropdown-menu border-0 shadow">
+              <li><a class="dropdown-item dropicon" href="#">€ Euro</a></li>
+              <hr class="link-opacity-10 text-secondary">
+              <li><a class="dropdown-item dropicon" href="#">€ Euro</a></li>
+              <hr class="link-opacity-10 text-secondary">
+
+              <li><a class="dropdown-item dropicon" href="#">€ Euro</a></li>
+              </ul>
+            </div>
+     </div>
+    </div>
+</div>
+</div>
+<header>
+<div class="container">
+<div class="row">
+<!--  -->
+<nav class="navbar navbar-light pt-4 pb-4">
+  <div class="container-fluid">
+
+    <div class="col-6 col-xl-4 order-0">
+    <a class="navbar-brand fs-3 fw-bold" href="#">
+    <button class="navbar-toggler d-xl-none border-0 shadow-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa-solid fa-list-ul"></i>
+    </button> Sharma.</a>
+
+ <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-12 col-xl-5 order-3 order-xl-2" >
+<div class="input">
+  <div class="input-group ">
+    <input type="text" class="form-control border-secondary border-opacity-50 shadow-none p-2  " placeholder="search inter shop..." aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary bg-dark" type="button" id="button-addon2"><i class="fa-solid text-white fa-magnifying-glass"></i></button>
+  </div>
+</div>
+ </div>
+
+<div class="col-6 col-xl-3 order-2 order-xl-3">
+<div class="shoping-cart d-flex justify-content-end align-baseline">
+
+  <button class="btn  fs-3 border-0 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-regular fa-heart"></i> <span class="number">3</span></button>
+  <button class="btn  fs-3 border-0 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i> <span class="number">3</span></button><span class="fs-5 d-flex align-items-center d-none d-sm-flex">£30.00</span>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+  </div>
+
+</div>
+ </div>
+    </div>
+  </nav>
+</div>
+</div>
+</header>
+
+<nav>
+  <div class="container-fluid bg-danger">
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-xl-3">
+      <div class="button-nav  bg-black d-flex justify-content-between position-relative ">
+        <div class="list text-white d-flex justify-content-between w-100 ">
+          <div>
+          <i class="fa-solid fs-5 fa-bars me-2"></i>Browse Categories
+        </div>
+          <div class="arrow  list text-end">
+            <i class="fa-solid fa-angle-down text-white"></i></div>
+        </div>
+
+      <div class="tooglenav shadow rounded-1 dis position-absolute bg-white w-100 ">
+        <ul class="ulnav">
+          <div class="lilist position-relative  d-flex justify-content-between align-items-center p-3">
+          <li class="list-unstyled">Brake Parts </li>
+          <i class="fa-solid fa-angle-right"></i>
+          <div class="chiled shadow  position-absolute">
+            <button class="btn-hover">Brake Tools </button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Drive shafts</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Emergency Brake</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Spools</button>
+          </div>
+        </div>
+         <div class="lilist  d-flex justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled ">Brake Parts </li>
+          <i class="fa-solid fa-angle-right"></i>
+          <div class="chiled  child2  chiled1  ">
+            <div class="personchild shadow  ">
+            <ul class="sub-child">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+           <button class="btn-hover">Brake Tools</button>
+          </ul>
+          <ul class="sub-child">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+           <button class="btn-hover">Brake Tools</button>
+          </ul>
+          <ul class="sub-child">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+           <button class="btn-hover">Brake Tools</button>
+          </ul>
+          <div class="img-childe ms-3"><img src="./css/img/banner-menu1.webp" alt="bunner"></div>
+        </div>
+          </div>
+        </div>
+        <div class="lilist d-flex justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled li-color ">Brake Parts </li>
+          <i class="fa-solid fa-angle-right"></i>
+          <div class="chiled shadow position-absolute">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Brake Tools</button>
+          </div>
+        </div>
+        <div class="lilist d-flex justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled ">Brake Parts </li>
+          <i class="fa-solid fa-angle-right"></i>
+          <div class="chiled shadow position-absolute">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Brake Tools</button>
+          </div>
+        </div>
+        <div class="lilist d-flex justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled ">Brake Parts </li>
+          <i class="fa-solid fa-angle-right"></i>
+          <div class="chiled shadow position-absolute">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Brake Tools</button>
+          </div>
+        </div>
+        <div class="lilist d-flex justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled ">Brake Parts </li>
+          <i class="fa-solid fa-angle-right"></i>
+          <div class="chiled shadow position-absolute">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Brake Tools</button>
+          </div>
+        </div>
+        <div class="lilist d-flex justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled ">Brake Parts </li>
+          <i class="fa-solid fa-angle-right"></i>
+          <div class="chiled shadow position-absolute">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Brake Tools</button>
+          </div>
+
+        </div>
+        <div class="lilist d-flex justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled ">Brake Parts </li>
+          <i class="fa-solid fa-angle-right"></i>
+          <div class="chiled shadow position-absolute">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">1</button>
+            <hr class="opacity-25 text-secondary">
+            <button class="btn-hover">Brake Tools</button>
+          </div>
+        </div>
+        <div class="lilist liliststoogles  justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled  "></i> seals & hubs </li>
+
+        </div>
+        <div class="lilist sublilisttogle d-flex justify-content-between align-items-center position-relative  p-3">
+          <li class="list-unstyled fw-bold "> <i class="fa-solid  fa-plus"></i> More Categories </li>
+        </div>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="col-12 col-xl-6 d-none d-xl-block">
+
+      <ul class="nav-item">
+      <a href="#"><li class="list-unstyled">Home <i class="fa-solid fa-angle-down text-white"></i></li></a>
+      <a href="#"><li class="list-unstyled">Shop <i class="fa-solid fa-angle-down text-white"></i></li></a>
+      <a href="#"><li class="list-unstyled">Pages<i class="fa-solid fa-angle-down text-white"></i></li></a>
+      <a href="#"><li class="list-unstyled">Blog <i class="fa-solid fa-angle-down text-white"></i></li></a>
+      <a href="#"><li class="list-unstyled">ContactUs</li></a>
+      </ul>
+
+    </div>
+    <div class="col-12 col-xl-3 d-none d-xl-block">
+      <div class="content d-flex">
+        <a class="d-flex text-decoration-none text-white" href="#">
+          <img class="me-2" src="./css/img/icon_header_phone.webp" alt="contnet">
+          <h5>(088)1234567</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</nav>
+
+
+
+<div class="toltal-slider position-relative ">
+  <div class="dot position-absolute">
+    <a onclick="curentslide(1)" class="dots " ></a>
+    <a onclick="curentslide(2)" class="dots "></a>
+    <a onclick="curentslide(3)" class="dots "></a>
+  </div>
+  <div class="slider position-relative  ">
+ <div class="container">
+  <div class="col-12 col-xl-5 p-5 ">
+          <span class="span-banner">T1-Black FRIDAY1.</span>
+          <h1 class="h1-bunner">Led Headlight <br> Bulbs</h1>
+          <p class="w-75 text-white">Lets diagnose your vehicle’s brake prodblems and offer solutions that fit your budget.</p>
+          <a href="#" class="a-bunnner">SHPPING NOW</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="slider slider1 position-relative ">
+        <div class="container ">
+            <div class="col-12 col-xl-5 p-5 slid2 ">
+              <span class="span-banner">T1-Black FRIDAY2.</span>
+              <h1 class="h1-bunner">Led Headlight <br> Bulbs</h1>
+              <p class="w-75 text-white">Lets diagnose your vehicle’s brake offer solutions that fit your budget.</p>
+              <a he class="a-bunnner">SHPPING NOW</a>
+              </div>
+            </div>
+      </div>
+
+
+      <div class="slider position-relative ">
+        <div class="container">
+          <div class="col-12 col-xl-5 p-5 ">
+              <span class="span-banner">Lorem ipsum dolor sit.</span>
+              <h1 class="h1-bunner">Lorem, ips <br> Bulbs</h1>
+              <p class="w-75 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, officiis.</p>
+              <a he class="a-bunnner">SHPPING NOW</a>
+            </div>
+          </div>
+          </div>
+
+          <div class="button-slider ">
+            <a onclick="nextimg(1)" class="priv " ><i class="fa-solid fa-angle-right"></i></a>
+            <a onclick="nextimg(-1)" class="next"><i class="fa-solid fa-angle-left"></i></a>
+          </div>
+        </div>
+
+
+        <!-- Ads1 after home slider -->
+   <div class="container ">
+    <div class="row m-5 shadow justify-content-between p-4">
+      <div class="col-12 col-md-6 m-2 m-xl-0 col-xl-3">
+        <div class="total justify-content-center d-flex align-items-center">
+          <div class="icon me-2"><img src="./css/img/static-icons-1.webp" alt="1"></div>
+          <div class="ditals m-2">
+            <div class="fw-bold">Free Shipping</div>
+            <span >Free shipping on all US orde</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 m-2 m-xl-0 col-xl-3">
+        <div class="total justify-content-center d-flex align-items-center">
+          <div class="icon me-2"><img src="./css/img/static-icons-2.webp" alt="1"></div>
+          <div class="ditals m-2">
+            <div class="fw-bold">Free Shipping</div>
+            <span >Free shipping on all US orde</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 m-2 m-xl-0  col-xl-3">
+        <div class="total justify-content-center d-flex align-items-center">
+          <div class="icon me-2"><img src="./css/img/static-icons-3.webp" alt="1"></div>
+          <div class="ditals m-2">
+            <div class="fw-bold">Free Shipping</div>
+            <span >Free shipping on all US orde</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 m-2 col-md-6 m-xl-0 col-xl-3">
+        <div class="total justify-content-center d-flex align-items-center">
+          <div class="icon me-2"><img src="./css/img/static-icons-4.webp" alt="1"></div>
+          <div class="ditals m-2">
+            <div class="fw-bold">Free Shipping</div>
+            <span >Free shipping on all US orde</span>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+ <!-- slider2 (product) -->
+ <div class="container">
+   <div class="row  justify-content-between mb-4">
+     <div class="col-xl-4 col-12 col-md-6">
+       <div class="NEW">
+         <span class="text-danger sapn-slider2"></span>
+         <span class="slider2-text"><strong>NEW</strong> ARRIVALS </span>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6 col-12 mt-3 mt-md-0 text-end">
+        <a class="left-sliders leftright-slider me-2" onclick="privslid()" ><i class="fa-solid fa-angle-left fs-5"></i></a>
+        <a class="right-slider leftright-slider" onclick="nextslid()" ><i class="fa-solid fa-angle-right fs-5"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- asli slider2 -->
+  <div class="container overflow-hidden  mb-4 ">
+<div class="rows  d-flex    slider2-total  p-4 ">
+   <div class="col-12  col-md-6 col-xl-3">
+    <div class="  product1  product rounded-2 p-2 position-relative">
+      <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product ">
+        <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product">$6.27</p>
+      </div>
+      <span class="new-poduct">NEW</span>
+      <div class="totla-buttonproduct">
+        <div class="other ">
+
+          <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+          <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+          <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+        </div>
+        <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12  col-md-6 col-xl-3">
+    <div class="product  rounded-2 p-2 position-relative">
+      <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product ">
+        <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product">$6.27</p>
+      </div>
+      <span class="new-poduct">NEW</span>
+      <div class="totla-buttonproduct">
+        <div class="other ">
+
+          <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+          <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+          <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+        </div>
+        <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-12  col-md-6 col-xl-3">
+
+    <div class="product  rounded-2 p-2 position-relative">
+      <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product ">
+        <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product">$6.27</p>
+      </div>
+      <span class="new-poduct">NEW</span>
+      <div class="totla-buttonproduct">
+        <div class="other ">
+
+          <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+          <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+          <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+        </div>
+        <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+      </div>
+    </div>
+  </div>
+<!--   </div>
+ -->
+
+  <div class="col-12  col-md-6 col-xl-3">
+     <div class="product   rounded-2 p-2 position-relative">
+      <div class="img-product"><img src="./css/img/10.webp" alt=""></div>
+      <div class="deteals-product ">
+        <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product">$6.27</p>
+      </div>
+
+      <span class="new-poduct">NEW</span>
+      <div class="totla-buttonproduct">
+      <div class="other ">
+
+        <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+        <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+        <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+      </div>
+      <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-12  col-md-6 col-xl-3">
+   <div class="product  rounded-2 p-2 position-relative">
+      <div class="img-product"><img src="./css/img/3.webp" alt=""></div>
+      <div class="deteals-product ">
+        <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+          <span class="star2"><i class="fa-solid fa-star"></i></span>
+        </span>
+
+        <p class="price-product">$6.27</p>
+      </div>
+      <span class="new-poduct">NEW</span>
+      <div class="totla-buttonproduct">
+        <div class="other ">
+
+          <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+          <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+          <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+        </div>
+        <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+      </div>
+    </div>
+   </div>
+
+  <div class="col-12  col-md-6 col-xl-3">
+    <div class="product  rounded-2 p-2 position-relative">
+      <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product ">
+        <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product">$6.27</p>
+      </div>
+      <span class="new-poduct">NEW</span>
+      <div class="totla-buttonproduct">
+        <div class="other ">
+
+          <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+          <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+          <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+        </div>
+        <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>
+
+</div>
+
+
+<div class="container mt-5 mb-5">
+<div class="row justify-content-center">
+  <div class="col-12 mb-3 mb-md-0 col-md-6 bunner1">
+    <a class="d-block" href="#"><img src="./css/img/2 (1).webp" alt=""></a>
+  </div>
+  <div class="col-12 col-md-6 bunner1">
+  <a href="#"><img src="./css/img/1111111111.webp" alt=""></a>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container ">
+<div class="row">
+  <div class="col-xl-8  col-12">
+<!--     <div class="container"> -->
+      <div class="row  justify-content-between mb-4">
+        <div class="col-xl-6 col-12 col-md-6">
+          <div class="NEW">
+            <span class="text-danger sapn-slider2"></span>
+            <span class="slider2-text"><strong>THIS WEEK’S</strong> HOT DEALS </span>
+           </div>
+         </div>
+         <div class="col-xl-6 col-md-6 col-12 mt-3 mt-md-0 text-end">
+           <a class="left-sliders3 leftright-slider me-2" onclick="privslid3()" ><i class="fa-solid fa-angle-left fs-5"></i></a>
+           <a class="right-slider3 leftright-slider" onclick="nextslid3()" ><i class="fa-solid fa-angle-right fs-5"></i></a>
+         </div>
+       <!-- </dor> -->
+     </div>
+
+
+
+
+
+    <div class="container overflow-hidden shadow mb-4 ">
+      <div class="rows  d-flex    slider2-total3  p-4 ">
+         <div class="col-12  col-md-6 ">
+          <div class="  product13  product3 rounded-2 p-2 position-relative">
+            <div class="img-product"><img src="./css/img/7.webp" alt=""></div>
+            <div class="deteals-product ">
+              <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product">$6.27</p>
+            </div>
+
+            <span class="new-poduct1">-8%</span>
+            <div class="totla-buttonproduct3">
+              <div class="other ">
+
+                <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+                <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+                <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+              </div>
+              <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+            </div>
+          </div>
+          <div class="timer ms-3 me-3 ">
+            <div class="total align-items-center d-flex justify-content-between flex-wrap ">
+             <div class="text ">
+               <h5 class="m-0">Hurry up!</h5>
+               <p class="text-secondary ">offer ends in:</p>
+             </div>
+             <div class="number-time d-flex ">
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">DAYS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">HOURS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">MINS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">SEC</p>
+               </div>
+
+             </div>
+             </div>
+
+           </div>
+        </div>
+
+        <div class="col-12  col-md-6 ">
+          <div class="product3  rounded-2 p-2 position-relative">
+            <div class="img-product"><img src="./css/img/9.webp" alt=""></div>
+            <div class="deteals-product ">
+              <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product">$6.01 <span class="text-secondary position-relative takhfif">$6.27 <span class=" bg-secondary line-tackfif position-absolute  "></span></span></p>
+            </div>
+            <span class="new-poduct1">-8%</span>
+            <div class="totla-buttonproduct3">
+              <div class="other ">
+
+                <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+                <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+                <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+              </div>
+              <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+            </div>
+          </div>
+          <div class="timer  ms-3 me-3">
+           <div class="total align-items-center d-flex justify-content-between flex-wrap ">
+            <div class="text ">
+              <h5 class="m-0">Hurry up!</h5>
+              <p class="text-secondary ">offer ends in:</p>
+            </div>
+            <div class="number-time d-flex ">
+              <div class="item-numbers">
+                <h5 class="text-center h3-timer1">00</h5>
+                <p class="text-secondary">DAYS</p>
+              </div>
+
+              <div class="item-numbers">
+                <h5 class="text-center h3-timer1">00</h5>
+                <p class="text-secondary">HOURS</p>
+              </div>
+
+              <div class="item-numbers">
+                <h5 class="text-center h3-timer">0</h5>
+                <p class="text-secondary">MINS</p>
+              </div>
+
+              <div class="item-numbers">
+                <h5 class="text-center h3-timer">0</h5>
+                <p class="text-secondary">SEC</p>
+              </div>
+
+            </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-12  col-md-6 ">
+          <div class="product3  rounded-2 p-2 position-relative">
+            <div class="img-product"><img src="./css/img/12.webp" alt=""></div>
+            <div class="deteals-product ">
+              <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product">$6.27</p>
+            </div>
+            <span class="new-poduct1 ">-7%</span>
+            <div class="totla-buttonproduct3">
+              <div class="other ">
+
+                <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+                <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+                <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+              </div>
+              <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+            </div>
+          </div>
+          <div class="timer ms-3 me-3 ">
+            <div class="total align-items-center d-flex justify-content-between flex-wrap ">
+             <div class="text ">
+               <h5 class="m-0">Hurry up!</h5>
+               <p class="text-secondary ">offer ends in:</p>
+             </div>
+             <div class="number-time d-flex ">
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">DAYS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">HOURS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">MINS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">SEC</p>
+               </div>
+
+             </div>
+             </div>
+
+           </div>
+        </div>
+      <!--   </div>
+       -->
+
+        <div class="col-12  col-md-6 ">
+           <div class="product3   rounded-2 p-2 position-relative">
+            <div class="img-product"><img src="./css/img/10.webp" alt=""></div>
+            <div class="deteals-product ">
+              <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product">$6.27</p>
+            </div>
+
+            <span class="new-poduct1">-8%</span>
+            <div class="totla-buttonproduct3">
+            <div class="other ">
+
+              <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+              <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+              <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+            </div>
+            <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+          </div>
+          </div>
+          <div class="timer ms-3 me-3 ">
+            <div class="total align-items-center d-flex justify-content-between flex-wrap ">
+             <div class="text ">
+               <h5 class="m-0">Hurry up!</h5>
+               <p class="text-secondary ">offer ends in:</p>
+             </div>
+             <div class="number-time d-flex ">
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">DAYS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">HOURS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">MINS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">SEC</p>
+               </div>
+
+             </div>
+             </div>
+
+           </div>
+        </div>
+
+        <div class="col-12  col-md-6 ">
+         <div class="product3  rounded-2 p-2 position-relative">
+            <div class="img-product"><img src="./css/img/3.webp" alt=""></div>
+            <div class="deteals-product ">
+              <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+                <span class="star2"><i class="fa-solid fa-star"></i></span>
+              </span>
+
+              <p class="price-product">$6.27</p>
+            </div>
+            <span class="new-poduct1">-8%</span>
+            <div class="totla-buttonproduct3">
+              <div class="other ">
+
+                <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+                <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+                <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+              </div>
+              <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+            </div>
+          </div>
+          <div class="timer ms-3 me-3 ">
+            <div class="total align-items-center d-flex justify-content-between flex-wrap ">
+             <div class="text ">
+               <h5 class="m-0">Hurry up!</h5>
+               <p class="text-secondary ">offer ends in:</p>
+             </div>
+             <div class="number-time d-flex ">
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">DAYS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">HOURS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">MINS</p>
+               </div>
+
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">SEC</p>
+               </div>
+
+             </div>
+             </div>
+
+           </div>
+         </div>
+
+        <div class="col-12  col-md-6 ">
+          <div class="product3  rounded-2 p-2 position-relative">
+            <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+            <div class="deteals-product ">
+              <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+                <span class="star"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product">$6.27</p>
+            </div>
+            <span class="new-poduct1">-8%</span>
+            <div class="totla-buttonproduct3">
+              <div class="other ">
+
+                <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+                <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+                <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+              </div>
+              <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+            </div>
+
+          </div>
+          <div class="timer ms-3 me-3 ">
+            <div class="total align-items-center d-flex justify-content-between flex-wrap ">
+             <div class="text ">
+               <h5 class="m-0">Hurry up!</h5>
+               <p class="text-secondary ">offer ends in:</p>
+             </div>
+             <div class="number-time d-flex ">
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">DAYS</p>
+               </div>
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer1">00</h5>
+                 <p class="text-secondary">HOURS</p>
+               </div>
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">MINS</p>
+               </div>
+               <div class="item-numbers">
+                 <h5 class="text-center h3-timer">0</h5>
+                 <p class="text-secondary">SEC</p>
+               </div>
+             </div>
+             </div>
+           </div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+
+
+
+
+
+    <div class="col-xl-4 d-none d-xl-block ">
+
+      <div class="row  justify-content-between mb-4">
+        <div class="col-xl-6 col-12 col-md-6">
+          <div class="NEW">
+            <span class="text-danger sapn-slider2"></span>
+            <span class="slider2-text"><strong>BEST</strong>SELLERS</span>
+           </div>
+         </div>
+         <div class="col-xl-6 col-md-6 col-12 mt-3 mt-md-0 text-end">
+           <a class="left-sliders4 leftright-slider me-2" onclick="privslid4()" ><i class="fa-solid fa-angle-left fs-5"></i></a>
+           <a class="right-slider4 leftright-slider" onclick="nextslid4()" ><i class="fa-solid fa-angle-right fs-5"></i></a>
+         </div>
+       </div>
+
+       <div class="container overflow-hidden shadow  mb-4 ">
+        <div class="rows  d-flex  slider2-total4  p-4 ">
+
+ <div class="col-12   ">
+        <div class="product4 product14 ">
+          <div class="item-product mt-3 mb-4 align-items-start justify-content-between d-flex">
+            <div class="img-slid4"><img src="./css/img/12.webp" alt=""></div>
+            <div class="deteals-product188 ">
+              <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star str"><i class="fa-solid fa-star"></i></span>
+                <span class="star str" ><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product prcproduct4">$6.27</p>
+            </div>
+          </div>
+
+          <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+            <div class="img-slid4"><img src="./css/img/7.webp" alt=""></div>
+            <div class="deteals-product188 ">
+              <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star str"><i class="fa-solid fa-star"></i></span>
+                <span class="star str" ><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product prcproduct4">$6.27</p>
+            </div>
+          </div>
+          <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+            <div class="img-slid4"><img src="./css/img/3.webp" alt=""></div>
+            <div class="deteals-product188 ">
+              <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star str"><i class="fa-solid fa-star"></i></span>
+                <span class="star str" ><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product prcproduct4">$6.27</p>
+            </div>
+          </div>
+
+          <div class="item-product mt-4 mb-3 align-items-start justify-content-between d-flex">
+            <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+            <div class="deteals-product188 ">
+              <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star str"><i class="fa-solid fa-star"></i></span>
+                <span class="star str" ><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product prcproduct4">$6.27</p>
+            </div>
+          </div>
+        </div>
+</div>
+<div class="col-12  ">
+<div class="product4 ">
+
+  <div class="item-product mt-3 mb-4 align-items-start justify-content-between d-flex">
+    <div class="img-slid4"><img src="./css/img/13.webp" alt=""></div>
+    <div class="deteals-product188 ">
+      <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+      <span class="star-product">
+        <span class="star str"><i class="fa-solid fa-star"></i></span>
+        <span class="star str" ><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+      </span>
+      <p class="price-product prcproduct4">$6.27</p>
+    </div>
+  </div>
+
+  <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+    <div class="img-slid4"><img src="./css/img/16.webp" alt=""></div>
+    <div class="deteals-product188 ">
+      <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+      <span class="star-product">
+        <span class="star str"><i class="fa-solid fa-star"></i></span>
+        <span class="star str" ><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+      </span>
+      <p class="price-product prcproduct4">$6.27</p>
+    </div>
+  </div>
+  <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+    <div class="img-slid4"><img src="./css/img/3.webp" alt=""></div>
+    <div class="deteals-product188 ">
+      <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+      <span class="star-product">
+        <span class="star str"><i class="fa-solid fa-star"></i></span>
+        <span class="star str" ><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+      </span>
+      <p class="price-product prcproduct4">$6.27</p>
+    </div>
+  </div>
+
+  <div class="item-product mt-4 mb-3 align-items-start justify-content-between d-flex">
+    <div class="img-slid4"><img src="./css/img/9.webp" alt=""></div>
+    <div class="deteals-product188 ">
+      <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+      <span class="star-product">
+        <span class="star str"><i class="fa-solid fa-star"></i></span>
+        <span class="star str" ><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+      </span>
+      <p class="price-product prcproduct4">$6.27</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-12 ">
+  <div class="product4">
+    <div class="item-product mt-3 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/12.webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+
+    <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+    <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/10.webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+
+    <div class="item-product mt-4 mb-3 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/7.webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-12 ">
+  <div class="product4">
+    <div class="item-product mt-3 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+
+    <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+    <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+
+    <div class="item-product mt-4 mb-3 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-12">
+  <div class="product4">
+    <div class="item-product mt-3 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+
+    <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+    <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+
+    <div class="item-product mt-4 mb-3 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-12 ">
+  <div class="product4">
+    <div class="item-product mt-3 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+
+    <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+    <div class="item-product mt-4 mb-4 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+
+    <div class="item-product mt-4 mb-3 align-items-start justify-content-between d-flex">
+      <div class="img-slid4"><img src="./css/img/1 (1).webp" alt=""></div>
+      <div class="deteals-product188 ">
+        <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+        <span class="star-product">
+          <span class="star str"><i class="fa-solid fa-star"></i></span>
+          <span class="star str" ><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product prcproduct4">$6.27</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+     </div>
+    </div>
+  </div>
+  </div>
+
+
+<!-- bunner after slider4 -->
+<div class="container">
+  <div class="rows">
+
+    <div class="col-xl-8 bunner85 d-flex   float-start col-12">
+<!-- <div class="block d-block"> -->
+      <div class="bunner5 shadow position-relative">
+        <div class="img-bunnner5"><a href="#"><img  src="./css/img/3.jpg" alt=""></a>
+        </div>
+        <div class="button-bunner5  ">
+        <h3 class="text-white" ><span class="text-danger">New</span> Led Headlight</h3>
+       <h4 class="h4-bunnner5">Cre-Xhp-50 Lamp Bead</h4>
+       <p class="text-white">Adjustable Bracket High Lumen 11390lms</p>
+    </div>
+      </div>
+<!--     </div> -->
+    </div>
+    <!-- slider5 -->
+<div class="col-xl-4   d-none d-xl-flex float-end">
+  <div class="toltal-slider5 position-relative ">
+    <div class="dot5 position-absolute">
+      <a onclick="curentslide5(1)" class="dots5 " ></a>
+      <a onclick="curentslide5(2)" class="dots5 "></a>
+      <a onclick="curentslide5(3)" class="dots5 "></a>
+    </div>
+    <div class="slider5 position-relative  ">
+    <div class="container">
+    <div class="col-12 p-4 shadow d-flex flex-column align-center align-items-center ">
+            <div class="imgslider5 pt-3 pb-3"><img src="./css/img/2.png" alt=""></div>
+            <div class="apostrophe pb-4"><img src="./css/img/icon_ttm.webp" alt=""></div>
+           <a class=" a-slider5 pb-3 text-center" href="#"> Sed vel urna at dui iaculis gravida. Maecenas pretium, velit vitae placerat faucibus, velit quam facilisis elit, sit amet lacinia..</a>
+          <p class="p-5">Magdalena Valencia</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider5 position-relative  ">
+        <div class="container">
+        <div class="col-12 p-4 shadow d-flex flex-column align-center align-items-center ">
+                <div class="imgslider5 pt-3 pb-3"><img src="./css/img/3.png" alt=""></div>
+                <div class="apostrophe pb-4"><img src="./css/img/icon_ttm.webp" alt=""></div>
+               <a class=" a-slider5 pb-3 text-center" href="#"> Sed vel urna at dui iaculis gravida. Maecenas pretium, velit vitae placerat faucibus, velit quam facilisis elit, sit amet lacinia..</a>
+              <p class="p-5">Magdalena Valencia</p>
+              </div>
+            </div>
+          </div>
+           <div class="slider5 position-relative  ">
+    <div class="container">
+    <div class="col-12 p-4 shadow d-flex flex-column align-center align-items-center ">
+            <div class="imgslider5 pt-3 pb-3"><img src="./css/img/2.png" alt=""></div>
+            <div class="apostrophe pb-4"><img src="./css/img/icon_ttm.webp" alt=""></div>
+           <a class=" a-slider5 pb-3 text-center" href="#"> Sed vel urna at dui iaculis gravida. Maecenas pretium, velit vitae placerat faucibus, velit quam facilisis elit, sit amet lacinia..</a>
+          <p class="p-5">Magdalena Valencia</p>
+          </div>
+        </div>
+      </div>
+       </div>
+      </div>
+    </div>
+
+</div>
+<!-- slider6 -->
+ <div class="container ">
+  <div class="rows  erfan ">
+    <div class="col-12 col-xl-8  float-start">
+<div class="container">
+  <div class="row p-3  justify-content-between mb-4">
+    <div class=" col-12 col-md-6">
+      <div class="NEW">
+        <span class="text-danger sapn-slider2"></span>
+        <span class="slider2-text"><strong>FEATURED </strong> PRODUCTS </span>
+       </div>
+     </div>
+     <div class=" col-md-6 col-12 mt-3 mt-md-0 text-end">
+       <a class="left-sliders6 leftright-slider me-2" onclick="privslid6()" ><i class="fa-solid fa-angle-left fs-5"></i></a>
+       <a class="right-sliders6 leftright-slider " onclick="nextslid6()" ><i class="fa-solid fa-angle-right fs-5"></i></a>
+     </div>
+   </div>
+ </div>
+
+
+ <div class="container overflow-hidden  mb-4 ">
+  <div class="rows  d-flex    slider2-total6  p-4 ">
+     <div class="col-12  col-md-6 col-xl-4">
+      <div class="  product16  product6 rounded-2 p-2 position-relative">
+        <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+        <div class="deteals-product ">
+          <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product">$6.27</p>
+        </div>
+        <span class="new-poduct">NEW</span>
+        <div class="totla-buttonproduct">
+          <div class="other ">
+
+            <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+            <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+            <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+          </div>
+          <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12  col-md-6 col-xl-4">
+      <div class="product6  rounded-2 p-2 position-relative">
+        <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+        <div class="deteals-product ">
+          <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product">$6.27</p>
+        </div>
+        <span class="new-poduct">NEW</span>
+        <div class="totla-buttonproduct">
+          <div class="other ">
+
+            <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+            <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+            <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+          </div>
+          <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12  col-md-6 col-xl-4">
+
+      <div class="product6  rounded-2 p-2 position-relative">
+        <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+        <div class="deteals-product ">
+          <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product">$6.27</p>
+        </div>
+        <span class="new-poduct">NEW</span>
+        <div class="totla-buttonproduct">
+          <div class="other ">
+
+            <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+            <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+            <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+          </div>
+          <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12  col-md-6 col-xl-4">
+       <div class="product6   rounded-2 p-2 position-relative">
+        <div class="img-product"><img src="./css/img/10.webp" alt=""></div>
+        <div class="deteals-product ">
+          <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product">$6.27</p>
+        </div>
+
+        <span class="new-poduct">NEW</span>
+        <div class="totla-buttonproduct">
+        <div class="other ">
+
+          <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+          <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+          <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+        </div>
+        <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-12  col-md-6 col-xl-4">
+     <div class="product6  rounded-2 p-2 position-relative">
+        <div class="img-product"><img src="./css/img/3.webp" alt=""></div>
+        <div class="deteals-product ">
+          <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+            <span class="star2"><i class="fa-solid fa-star"></i></span>
+          </span>
+
+          <p class="price-product">$6.27</p>
+        </div>
+        <span class="new-poduct">NEW</span>
+        <div class="totla-buttonproduct">
+          <div class="other ">
+
+            <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+            <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+            <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+          </div>
+          <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+        </div>
+      </div>
+     </div>
+
+    <div class="col-12  col-md-6 col-xl-4">
+      <div class="product6  rounded-2 p-2 position-relative">
+        <div class="img-product"><img src="./css/img/1 (1).webp" alt=""></div>
+        <div class="deteals-product ">
+          <p class="w-75 m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product">$6.27</p>
+        </div>
+        <span class="new-poduct">NEW</span>
+        <div class="totla-buttonproduct">
+          <div class="other ">
+
+            <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+            <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+            <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+          </div>
+          <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+</div>
+<div class="col-4 float-end mt-4   p-3 d-none d-xl-block">
+  <div class=" bunner1   " ><a href="#"><img src="./css/img/4.jpg" alt=""></a></div>
+</div>
+</div>
+</div>
+
+
+
+
+ <div class="container mt-4">
+  <div class="row  justify-content-between mb-4">
+    <div class="col-xl-6 col-12 col-md-6">
+      <div class="NEW">
+        <span class="text-danger sapn-slider2"></span>
+        <span class="slider2-text"><strong>WHEELS </strong>& TIRES</span>
+       </div>
+     </div>
+     <div class="col-xl-6 col-md-6 col-12 mt-3 mt-md-0 text-sm-end text-center  d-sm-block">
+    <!--    <a class="btn1 btn-slid6 me-3 position-relative" > <span class="sapn-slider6  position-absolute"></span>Wheel Bearings</a>
+       <a class="btn1 btn-slid6 me-3 position-relative" > <span class="sapn-slider6  position-absolute"></span>Wheel Bearings</a>
+       <a class="btn1 btn-slid6 me-3 position-relative" > <span class="sapn-slider6  position-absolute"></span>Wheel Bearings</a> -->
+       <a  onclick="curentslide6(1)" class="  btn-slid6 me-3 d-inline-block   mb-4 position-relative " ><span class="sapn-slider6  position-absolute"></span>Wheel Bearing</a>
+       <a  onclick="curentslide6(2)" class=" btn-slid6 me-3 d-inline-block mb-4  position-relative " ><span class="sapn-slider6  position-absolute"></span>Wheel Bearing</a>
+       <a  onclick="curentslide6(3)" class=" btn-slid6 me-3 d-inline-block mb-4  position-relative " ><span class="sapn-slider6  position-absolute"></span>Wheel Bearing</a>
+
+     </div>
+   </div>
+   <div class="item1">
+  <div class="row p-0 m-0">
+    <div class="col-xl-2 col-12 col-md-6 p-0 order-2 order-xl-0 text-center ">
+      <div class="img6"><img src="./css/img/5.webp" alt=""></div>
+    </div>
+
+    <div class="col-xl-6 d-none  shadow d-xl-flex justify-content-between align-items-center">
+
+      <div class="details p-4">
+        <span class="text-secondary d-block p-2 opacity-75">Apple</span>
+       <a href="#"  class="a-details "> <p class="p-details">JBL Flip 3 Splashproof  Portable Bluetooth 2</p></a>
+        <span class="star-product d-block ">
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+          <span class="star"><i class="fa-solid fa-star"></i></span>
+        </span>
+        <p class="price-product6 mb-3">$453.58</p>
+
+        <button class="btn-details">ADD TO CART</button>
+      </div>
+     <div class="  bunner-product6  "><img src="./css/img/2 (2).webp" alt=""></div>
+
+    </div>
+
+
+    <div class="col-xl-4 col-12 col-md-6 text-center shadow">
+      <div class="item-product  p-2 d-block d-xl-none mt-4 mb-4 align-items-center justify-content-between d-flex">
+        <div class="img-slid4"><img src="./css/img/2 (2).webp" alt=""></div>
+        <div class="deteals-product188 ">
+          <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star str"><i class="fa-solid fa-star"></i></span>
+            <span class="star str" ><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product prcproduct4">$6.27</p>
+        </div>
+      </div>
+      <div class="item-product  mt-4 mb-4  align-items-center justify-content-between d-flex">
+        <div class="img-slid4"><img src="./css/img/13.webp" alt=""></div>
+        <div class="deteals-product188 ">
+          <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star str"><i class="fa-solid fa-star"></i></span>
+            <span class="star str" ><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product prcproduct4">$6.27</p>
+        </div>
+      </div>
+
+      <div class="item-product    mt-4 mb-4  align-items-center justify-content-between d-flex">
+        <div class="img-slid4"><img src="./css/img/12.webp" alt=""></div>
+        <div class="deteals-product188 ">
+          <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+          <span class="star-product">
+            <span class="star str"><i class="fa-solid fa-star"></i></span>
+            <span class="star str" ><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product prcproduct4">$6.27</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="item1">
+    <div class="row p-0 m-0">
+      <div class="col-xl-2 col-12 col-md-6 p-0 order-2 order-xl-0 text-center ">
+        <div class="img6"><img src="./css/img/5.webp" alt=""></div>
+      </div>
+
+      <div class="col-xl-6 d-none  shadow d-xl-flex justify-content-between align-items-center">
+
+        <div class="details p-4">
+          <span class="text-secondary d-block p-2 opacity-75">Apple</span>
+         <a href="#"  class="a-details "> <p class="p-details">JBL Flip 3 Splashproof  Portable Bluetooth 2</p></a>
+          <span class="star-product d-block ">
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+            <span class="star"><i class="fa-solid fa-star"></i></span>
+          </span>
+          <p class="price-product6 mb-3">$453.58</p>
+
+          <button class="btn-details">ADD TO CART</button>
+        </div>
+       <div class="  bunner-product6  "><img src="./css/img/2 (2).webp" alt=""></div>
+
+      </div>
+
+
+      <div class="col-xl-4 col-12 col-md-6 text-center shadow">
+        <div class="item-product  p-2 d-block d-xl-none mt-4 mb-4 align-items-center justify-content-between d-flex">
+          <div class="img-slid4"><img src="./css/img/10.webp" alt=""></div>
+          <div class="deteals-product188 ">
+            <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+            <span class="star-product">
+              <span class="star str"><i class="fa-solid fa-star"></i></span>
+              <span class="star str" ><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            </span>
+            <p class="price-product prcproduct4">$6.27</p>
+          </div>
+        </div>
+        <div class="item-product  mt-4 mb-4  align-items-center justify-content-between d-flex">
+          <div class="img-slid4"><img src="./css/img/11.webp" alt=""></div>
+          <div class="deteals-product188 ">
+            <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+            <span class="star-product">
+              <span class="star str"><i class="fa-solid fa-star"></i></span>
+              <span class="star str" ><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            </span>
+            <p class="price-product prcproduct4">$6.27</p>
+          </div>
+        </div>
+
+        <div class="item-product    mt-4 mb-4  align-items-center justify-content-between d-flex">
+          <div class="img-slid4"><img src="./css/img/2 (2).webp" alt=""></div>
+          <div class="deteals-product188 ">
+            <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+            <span class="star-product">
+              <span class="star str"><i class="fa-solid fa-star"></i></span>
+              <span class="star str" ><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+            </span>
+            <p class="price-product prcproduct4">$6.27</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="item1">
+      <div class="row p-0 m-0">
+        <div class="col-xl-2 col-12 col-md-6 p-0 order-2 order-xl-0 text-center ">
+          <div class="img6"><img src="./css/img/5.webp" alt=""></div>
+        </div>
+
+        <div class="col-xl-6 d-none  shadow d-xl-flex justify-content-between align-items-center">
+
+          <div class="details p-4">
+            <span class="text-secondary d-block p-2 opacity-75">Apple</span>
+           <a href="#"  class="a-details "> <p class="p-details">JBL Flip 3 Splashproof  Portable Bluetooth 2</p></a>
+            <span class="star-product d-block ">
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+              <span class="star"><i class="fa-solid fa-star"></i></span>
+            </span>
+            <p class="price-product6 mb-3">$453.58</p>
+
+            <button class="btn-details">ADD TO CART</button>
+          </div>
+         <div class="  bunner-product6  "><img src="./css/img/13.webp" alt=""></div>
+
+        </div>
+
+
+        <div class="col-xl-4 col-12 col-md-6 text-center shadow">
+          <div class="item-product  p-2 d-block d-xl-none mt-4 mb-4 align-items-center justify-content-between d-flex">
+            <div class="img-slid4"><img src="./css/img/2 (2).webp" alt=""></div>
+            <div class="deteals-product188 ">
+              <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star str"><i class="fa-solid fa-star"></i></span>
+                <span class="star str" ><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product prcproduct4">$6.27</p>
+            </div>
+          </div>
+          <div class="item-product  mt-4 mb-4  align-items-center justify-content-between d-flex">
+            <div class="img-slid4"><img src="./css/img/13.webp" alt=""></div>
+            <div class="deteals-product188 ">
+              <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star str"><i class="fa-solid fa-star"></i></span>
+                <span class="star str" ><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product prcproduct4">$6.27</p>
+            </div>
+          </div>
+
+          <div class="item-product  mt-4 mb-4  align-items-center justify-content-between d-flex">
+            <div class="img-slid4"><img src="./css/img/2 (2).webp" alt=""></div>
+            <div class="deteals-product188 ">
+              <p class=" m-1"><a class="detals-prodacta" href="#">Kodak PIXPRO Astro  Zoom AZ421 16 MP 2</a></p>
+              <span class="star-product">
+                <span class="star str"><i class="fa-solid fa-star"></i></span>
+                <span class="star str" ><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+                <span class="star2 str"><i class="fa-solid fa-star"></i></span>
+              </span>
+              <p class="price-product prcproduct4">$6.27</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+</div>
+
+<div class="container mt-4">
+  <div class="container">
+    <div class="row  justify-content-between mb-4">
+      <div class="col-xl-4 col-12 col-md-6">
+        <div class="NEW">
+          <span class="text-danger sapn-slider2"></span>
+          <span class="slider2-text"><strong>LATEST </strong> BLOGS </span>
+         </div>
+       </div>
+       <div class="col-xl-4 col-md-6 col-12 mt-3 mt-md-0 text-end">
+         <a class="left-sliders7 leftright-slider me-2" onclick="privslid7()" ><i class="fa-solid fa-angle-left fs-5"></i></a>
+         <a class="right-slider7 leftright-slider" onclick="nextslid7()" ><i class="fa-solid fa-angle-right fs-5"></i></a>
+       </div>
+     </div>
+   </div>
+</div>
+
+<div class="container overflow-hidden  mb-4 ">
+  <div class="rows  d-flex    slider2-total7  p-4 ">
+     <div class="col-12  col-md-6 col-xl-4">
+      <div class="  product17  product7  p-3 rounded-2  position-relative">
+<div class="total-img position-relative">
+  <div class=" img-product7 "><img src="./css/img/1 (2).webp" alt="">
+  </div>
+    <div class="new-product7 ">
+    <span class="span1 span1-storang ">06</span>
+    <span class="span1 span7">SEP</span>
+  </div>
+
+   </div>
+<div class="ditals-slider7 mt-5">
+  <a class=" mt-5  a-product7" href="#">Buy Used Engines and Used Transmissions</a>
+  <div class="by mt-4 mb-4"><span class="text-secondary">By  </span><a class="a-product7" href="#">Hasthemes</a></div>
+<p class="text-secondary ">It's no secret, engines and transmissions can be very expensive...</p>
+<button class="btn-details mt-3 mb-3">READ MORE</button>
+
+</div>
+
+  <!--       <div class="totla-buttonproduct">
+          <div class="other ">
+
+            <a href="#"><div class="favorite stle"><i class="fa-regular fa-heart"></i></div></a>
+            <a href="#"><div class="repeat stle"><i class="fa-solid fa-repeat"></i></div></a>
+            <a href="#"><div class="eye stle"><i class="fa-solid fa-eye"></i></div></a>
+          </div>
+          <a href="#"><div class="box stle"><i class="fa-solid fa-cart-shopping"></i></div></a>
+        </div> -->
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="col-12  col-md-6 col-xl-4">
+      <div class="   product7  p-3 rounded-2  position-relative">
+        <div class="total-img position-relative">
+          <div class=" img-product7 "><img src="./css/img/1 (2).webp" alt="">
+          </div>
+            <div class="new-product7 ">
+            <span class="span1 span1-storang ">06</span>
+            <span class="span1 span7">SEP</span>
+          </div>
+
+           </div>
+        <div class="ditals-slider7 mt-5">
+          <a class=" mt-5  a-product7" href="#">Buy Used Engines and Used Transmissions</a>
+          <div class="by mt-4 mb-4"><span class="text-secondary">By  </span><a class="a-product7" href="#">Hasthemes</a></div>
+        <p class="text-secondary ">It's no secret, engines and transmissions can be very expensive...</p>
+        <button class="btn-details mt-3 mb-3">READ MORE</button>
+        </div>
+       </div>
+    </div>
+
+
+    <div class="col-12  col-md-6 col-xl-4">
+      <div class="   product7  p-3 rounded-2  position-relative">
+        <div class="total-img position-relative">
+          <div class=" img-product7 "><img src="./css/img/88.webp" alt="">
+          </div>
+            <div class="new-product7 ">
+            <span class="span1 span1-storang ">06</span>
+            <span class="span1 span7">SEP</span>
+          </div>
+
+           </div>
+        <div class="ditals-slider7 mt-5">
+          <a class=" mt-5  a-product7" href="#">Buy Used Engines and Used Transmissions</a>
+          <div class="by mt-4 mb-4"><span class="text-secondary">By  </span><a class="a-product7" href="#">Hasthemes</a></div>
+        <p class="text-secondary ">It's no secret, engines and transmissions can be very expensive...</p>
+        <button class="btn-details mt-3 mb-3">READ MORE</button>
+        </div>
+       </div>
+    </div>
+  <!--   </div>
+   -->
+
+   <div class="col-12  col-md-6 col-xl-4">
+    <div class="   product7  p-3 rounded-2  position-relative">
+      <div class="total-img position-relative">
+        <div class=" img-product7 "><img src="./css/img/77.webp" alt="">
+        </div>
+          <div class="new-product7 ">
+          <span class="span1 span1-storang ">06</span>
+          <span class="span1 span7">SEP</span>
+        </div>
+
+         </div>
+      <div class="ditals-slider7 mt-5">
+        <a class=" mt-5  a-product7" href="#">Buy Used Engines and Used Transmissions</a>
+        <div class="by mt-4 mb-4"><span class="text-secondary">By  </span><a class="a-product7" href="#">Hasthemes</a></div>
+      <p class="text-secondary ">It's no secret, engines and transmissions can be very expensive...</p>
+      <button class="btn-details mt-3 mb-3">READ MORE</button>
+      </div>
+     </div>
+  </div>
+
+  <div class="col-12  col-md-6 col-xl-4">
+    <div class="   product7  p-3 rounded-2  position-relative">
+      <div class="total-img position-relative">
+        <div class=" img-product7 "><img src="./css/img/88.webp" alt="">
+        </div>
+          <div class="new-product7 ">
+          <span class="span1 span1-storang ">06</span>
+          <span class="span1 span7">SEP</span>
+        </div>
+
+         </div>
+      <div class="ditals-slider7 mt-5">
+        <a class=" mt-5  a-product7" href="#">Buy Used Engines and Used Transmissions</a>
+        <div class="by mt-4 mb-4"><span class="text-secondary">By  </span><a class="a-product7" href="#">Hasthemes</a></div>
+      <p class="text-secondary ">It's no secret, engines and transmissions can be very expensive...</p>
+      <button class="btn-details mt-3 mb-3">READ MORE</button>
+      </div>
+     </div>
+  </div>
+
+  <div class="col-12  col-md-6 col-xl-4">
+    <div class="   product7  p-3 rounded-2  position-relative">
+      <div class="total-img position-relative">
+        <div class=" img-product7 "><img src="./css/img/5 (1).webp" alt="">
+        </div>
+          <div class="new-product7 ">
+          <span class="span1 span1-storang ">06</span>
+          <span class="span1 span7">SEP</span>
+        </div>
+
+         </div>
+      <div class="ditals-slider7 mt-5">
+        <a class=" mt-5  a-product7" href="#">Buy Used Engines and Used Transmissions</a>
+        <div class="by mt-4 mb-4"><span class="text-secondary">By  </span><a class="a-product7" href="#">Hasthemes</a></div>
+      <p class="text-secondary ">It's no secret, engines and transmissions can be very expensive...</p>
+      <button class="btn-details mt-3 mb-3">READ MORE</button>
+      </div>
+     </div>
+  </div>
+
+  </div>
+  </div>
+
+<div class="container shadow overflow-hidden mt-5 mb-5">
+  <div class="row text-center  ">
+
+ <div class="item-img col-xl-2 p-4 col-md-4 col-sm-6 col-12"><img src="./css/img/100.webp" alt=""></div>
+ <div class="item-img col-xl-2 p-4 col-md-4 col-sm-6 col-12"><img src="./css/img/101.webp" alt=""></div>
+ <div class="item-img col-xl-2 p-4 col-md-4 col-sm-6 col-12"><img src="./css/img/102.webp" alt=""></div>
+ <div class="item-img col-xl-2 p-4 col-md-4 col-sm-6 col-12"><img src="./css/img/100.webp" alt=""></div>
+ <div class="item-img col-xl-2 p-4 col-md-4 col-sm-6 col-12"><img src="./css/img/104.webp" alt=""></div>
+  <div class="item-img col-xl-2 p-4 col-md-4 col-sm-6 col-12"><img src="./css/img/105.webp" alt=""></div>
+</div>
+</div>
+
+<footer class=" fottet ">
+<div class="container ">
+  <div class="row p-4">
+    <div class="col-xl-4  col-md-6 col-12">
+      <div class="text-white  ">
+      <a class="navbar-brand fs-3 mt-3 fw-bold d-block" href="#"> Sharma.</a>
+    </div>
+    <div class="address mt-4">
+      <span class="d-block text-white fw-bold">Address</span>
+      <span class=" span2-footer"><a class="text-decoration-none " href="#">4710-4890 Breckinridge St,Fayetteville </a></span>
+      </div>
+
+<div class="address mt-4">
+  <span class="d-block text-white fw-bold">Need Help?</span>
+  <span class=" span2-footer"><a class="text-decoration-none " href="#">Call: 1-800-345-6789</a></span>
+  </div>
+  <div class="address mt-4">
+    <span class="d-block text-white fw-bold">Products & Sales </span>
+    <span class=" span2-footer"><a class="text-decoration-none " href="#">Call: 1-800-345-6789  </a></span>
+    </div>
+    <button class="contectus-footer mt-4 mb-4">Contact us</button>
+
+  </div>
+    <div class="col-md-5 col-12 ">
+      <div class="text-white  ">
+      <p class=" fw-bold mb-4 navbar-brand mt-4"> JOIN OUR NEWSLETTER</p>
+      <p class=" p-footer">Subscribe to receive inspiration, ideas and news in your inbox.</p>
+      <div class="input-grop  mb-5">
+        <input class="input-footer" type="text" placeholder="Enter Your Enail...">
+         <button class="input-footers"><i class="fa-regular fa-envelope"></i></button>
+      </div>
+<div class="fullowus">
+  <p class=" fw-bold mb-4 navbar-brand"> FOLLOW US:</p>
+<a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+<a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+<a href="#"><i class="fa-brands fa-google-plus"></i>Google</a>
+<a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a>
+</div>
+
+    </div>
+  </div>
+
+
+
+    <div class="col-xl-3 col-md-6 col-12">
+      <div class="text-white">
+      <div class="row">
+        <div class="col-7">
+       <p class=" fw-bold mb-4 navbar-brand mt-4">CUSTOM LINKS  </p>
+        <li class="list-unstyled item-list"><a href="#">About Us</a></li>
+        <li class="list-unstyled item-list"><a href="#">Delivery Information</a></li>
+        <li class="list-unstyled item-list"><a href="#">Privacy Policy</a></li>
+        <li class="list-unstyled item-list"><a href="#">Terms & Conditions</a></li>
+        <li class="list-unstyled item-list"><a href="#">Contact Us</a></li>
+        <li class="list-unstyled item-list"><a href="#">Site Map</a></li>
+        <li class="list-unstyled item-list"><a href="#">Order History</a></li>
+
+
+
+    </div>
+      <div class="col-5">
+        <p class=" fw-bold mb-5 navbar-brand"> </p>
+
+        <li class="list-unstyled item-list"><a href="#">Brands</a></li>
+        <li class="list-unstyled item-list"><a href="#">Gift Certificates</a></li>
+        <li class="list-unstyled item-list"><a href="#">Affiliate</a></li>
+        <li class="list-unstyled item-list"><a href="#">Specials</a></li>
+        <li class="list-unstyled item-list"><a href="#">Returns</a></li>
+
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-4 ">
+<div class="row justify-content-between">
+  <hr class="text-white">
+<div class="col-xl-5 col-12 ">
+<div class="apple text-white">
+
+  <span class="span-section2-footer text-center me-2">Free App:</span>
+  <button class="apples mt-lg-1  me-2"><i class="fa-brands fa-apple me-2"></i>Apple Store</button>
+  <button class="google mt-4 mt-lg-1 me-2"><i class="fa-brands fa-android me-2"></i>Google Play</button>
+</div>
+</div>
+<div class="col-xl-5 col-12 mb-3">
+  <div class="pament text-white mt-xl-2 mt-5 text-white text-start text-xl-end">
+  <span class="span-section2-footer text-center me-2">Payment:</span>
+ <div class="img-pamaent d-inline-block"> <img src="./css/img/payment.webp" alt=""></div>
+</div>
+</div>
+<hr class="text-white ">
+</div>
+</div>
+
+<div class="container mt-4 pb-4">
+  <div class="rows text-center ">
+  <a href="#" class="item-list">Online Shopping</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Promotions</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Site Map</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Support</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Orders And Returns</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Support</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Contact Us</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Most Populars</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">New Arrivals</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Payments</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Special</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Products</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Manufacturers</a>
+  <span class="item-fot"></span>
+  <a href="#" class="item-list">Shipping Payments</a>
+
+</div>
+</div>
+
+
+<div class="container-fluids ">
+<div class=" copuright pt-3 pb-3  ">
+ <p> Copyright ©  <a href="#" class="acopy">HasThemes.</a>  All Rights Reserved</p>
+</div>
+</div>
+
+</footer>
+
+      </body>
+
+
+
+      </html>
+
+
+
+
+
+
